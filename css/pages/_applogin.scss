@@ -7,6 +7,134 @@
         height: 100px;
     }
 
+
+
+    
+.animation-ctn{
+    text-align:center;
+    margin-top:5em;
+     
+  }
+  
+      @-webkit-keyframes checkmark {
+      0% {
+          stroke-dashoffset: 100px
+      }
+  
+      100% {
+          stroke-dashoffset: 200px
+      }
+  }
+  
+  @-ms-keyframes checkmark {
+      0% {
+          stroke-dashoffset: 100px
+      }
+  
+      100% {
+          stroke-dashoffset: 200px
+      }
+  }
+  
+  @keyframes checkmark {
+      0% {
+          stroke-dashoffset: 100px
+      }
+  
+      100% {
+          stroke-dashoffset: 0px
+      }
+  }
+  
+  @-webkit-keyframes checkmark-circle {
+      0% {
+          stroke-dashoffset: 480px
+  
+      }
+  
+      100% {
+          stroke-dashoffset: 960px;
+  
+      }
+  }
+  
+  @-ms-keyframes checkmark-circle {
+      0% {
+          stroke-dashoffset: 240px
+      }
+  
+      100% {
+          stroke-dashoffset: 480px
+      }
+  }
+  
+  @keyframes checkmark-circle {
+      0% {
+          stroke-dashoffset: 480px
+      }
+  
+      100% {
+          stroke-dashoffset: 960px
+      }
+  }
+  
+  @keyframes colored-circle {
+      0% {
+          opacity:0
+      }
+  
+      100% {
+          opacity:100
+      }
+  }
+  
+  .icon{
+        animation: pulsating 2s linear infinite;
+       margin:0 auto;
+       display:inline-block;
+  
+       width:150px;
+       height:150px;
+       border-radius:50%;
+  }
+  .inlinesvg .svg svg {
+      display: inline;
+       
+  }
+  
+  
+  @keyframes pulsating {
+      0% {
+          box-shadow: 0px 0px 0px 5px rgba(0, 196, 179, 0.1);
+      }
+  
+    
+     
+     
+  
+      100% {
+          box-shadow: 0px 0px 10px 50px rgba(76, 94, 179, 0);
+      }
+  }
+  
+  
+  .icon--order-success svg polyline {
+      -webkit-animation: checkmark 0.25s ease-in-out 0.7s backwards;
+      animation: checkmark 0.25s ease-in-out 0.7s backwards
+  }
+  
+  .icon--order-success svg circle {
+      -webkit-animation: checkmark-circle 0.6s ease-in-out backwards;
+      animation: checkmark-circle 0.6s ease-in-out backwards;
+  }
+  .icon--order-success svg circle#colored {
+      -webkit-animation: colored-circle 0.6s ease-in-out 0.7s backwards;
+      animation: colored-circle 0.6s ease-in-out 0.7s backwards;
+       
+  }
+
+  
+
 }
 
 

@@ -801,7 +801,7 @@ a {
 
 label {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
   color: #000;
   margin-bottom: 5px !important;
 }
@@ -11754,5 +11754,5 @@ input:checked + .slider::after {
   justify-content: center;
 }
 .app-login img {
-  height: 150px;
+  height: 80px;
 }/*# sourceMappingURL=main.css.map */

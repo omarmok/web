@@ -947,10 +947,6 @@ input::placeholder {
   top: 10px;
   right: 10px;
 }
-.form-content .form-control {
-  text-indent: 20px;
-}
-
 .breadcrumb-container {
   margin-bottom: 0;
 }
@@ -11754,5 +11750,5 @@ input:checked + .slider::after {
   justify-content: center;
 }
 .app-login img {
-  height: 80px;
+  height: 50px;
 }/*# sourceMappingURL=main.css.map */

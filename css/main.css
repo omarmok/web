@@ -746,7 +746,9 @@ body {
   direction: rtl;
   font-size: 14px;
   text-align: right;
-  background: #FAF9F7;
+  background: url(/images/mobile-app-bg.svg), #FAF9F7;
+  background-repeat: no-repeat;
+  background-position: right top;
   font-family: "IBMPlexSansArabic";
   min-height: 100vh;
   max-width: 700px;
@@ -11742,13 +11744,10 @@ input:checked + .slider::after {
 }
 
 .app-login {
-  background: url(/images/mobile-app-bg.svg) right top no-repeat;
-  min-height: 95vh;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .app-login img {
-  height: 50px;
+  height: 70px;
 }/*# sourceMappingURL=main.css.map */

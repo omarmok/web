@@ -1,0 +1,368 @@
+.userManagmetStyle {
+  padding-bottom: 50px;
+
+  &--card {
+    margin-bottom: 24px;
+    box-shadow: 0 0 68px 0 rgba(174, 175, 175, 0.17);
+    height: 380px;
+    max-height: 380px;
+    justify-content: space-between;
+
+    &--rolename {
+      @include boldfont-16;
+
+      &__total {
+        @include meduimfont;
+        color: #78829d;
+      }
+    }
+
+    &--rolelist {
+      ul {
+        li {
+          padding: 5px 20px;
+          position: relative;
+          color: #78829d;
+          @include meduimfont-reg-14;
+
+          &::before {
+            content: "";
+            border-radius: 6px;
+            width: 10px;
+            height: 4px;
+            position: absolute;
+            top: 50%;
+            display: inline-block;
+            background: #50cd89;
+            right: 0;
+          }
+        }
+      }
+    }
+
+    &--action {
+    }
+  }
+
+  &--table-search {
+    border-radius: 0;
+    box-shadow: 0px 5px 35px 0px rgba(0, 27, 175, 0.05);
+
+    .searchicon {
+      position: absolute;
+      height: 45px;
+      width: 45px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      right: 0;
+
+      img {
+        height: 24px;
+      }
+    }
+
+    .form-control:focus {
+      background: #fff;
+      border: 1px solid #05bbc9;
+    }
+
+    .custom-input {
+      background: #f9f9f9;
+      border: none;
+      border-radius: 6px;
+      color: #98a1b7;
+      width: 330px;
+    }
+
+    .custom-input::-webkit-input-placeholder {
+      color: #98a1b7;
+      @include meduimfont;
+    }
+
+    .custom-input::-moz-placeholder {
+      color: #98a1b7;
+      @include meduimfont;
+    }
+
+    .custom-input::-ms-input-placeholder {
+      color: #98a1b7;
+      @include meduimfont;
+    }
+
+    .custom-input::-moz-placeholder {
+      color: #98a1b7;
+      @include meduimfont;
+    }
+  }
+
+  .tabletotal {
+    h4 {
+      font-weight: 600;
+      color: #0d8f75;
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+
+    span {
+      font-weight: 600;
+      font-size: 14px;
+    }
+  }
+
+  .filter.dropdown-toggle::after {
+    display: none;
+  }
+
+  .verficationinterviewerContainer {
+    .inputs {
+      gap: 10px;
+    }
+
+    .absher img {
+      height: 50px;
+    }
+
+    .form-control {
+      height: 40px;
+      width: 30px;
+      text-align: center;
+      padding: 0;
+    }
+  }
+}
+
+.editrole {
+  h4 {
+    @include boldfont;
+    padding: 15px;
+    background: $baige;
+    color: #704818;
+  }
+
+  .allpermission {
+    .title {
+      @include boldfont;
+      width: 28%;
+    }
+
+    label {
+      @include meduimfont-reg-12;
+    }
+
+    border-bottom: 1px dashed #cdcdcd;
+  }
+
+  .imgdiv img {
+    height: 90px;
+  }
+
+  .accordion-item {
+    border: none;
+
+    .accordion-body {
+      padding-right: 15px !important;
+      padding-left: 0 !important;
+      padding-top: 1rem !important;
+      padding-bottom: 1rem !important;
+      border: none;
+
+      .inaccrdionPermission {
+        border-bottom: 1px dashed #cdcdcd;
+
+        .title {
+          @include boldfont;
+          width: 30%;
+        }
+
+        label {
+          @include meduimfont;
+          margin: 0 !important;
+        }
+
+        .form-check {
+          background: #fafcff;
+          border: 1px solid #f0f4fa;
+          border-radius: 4px;
+          min-width: 130px;
+          padding: 10px;
+          align-items: center;
+          display: flex;
+          justify-content: center;
+        }
+      }
+
+      border-bottom: 1px dashed #cdcdcd;
+    }
+  }
+
+  .checked {
+    background: #f2fffc !important;
+    border: 1px solid #e3f9f4 !important;
+    color: $green-100 !important;
+
+    label {
+      color: $green-100 !important;
+    }
+  }
+
+  .form-check-input {
+    border: 2px solid #cfd9e0;
+  }
+
+  .form-check-input[type="checkbox"] {
+    border-radius: 4px;
+  }
+
+  .form-check-input:checked {
+    border: 1px solid #e3f9f4 !important;
+  }
+
+  .accordion-button {
+    background: #fafcff;
+    border: 1px solid #f0f4fa;
+    border-radius: 4px;
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  .accordion-button:not(.collapsed) {
+    background: #0d8f75 !important;
+    color: #ffffff !important;
+
+    .form-check {
+      label {
+        color: #fff;
+      }
+    }
+  }
+
+  .accordion-button:not(.collapsed)::after {
+    filter: brightness(0) invert(1);
+  }
+
+  .accordion-button:not(.collapsed) {
+    .checked {
+      background: transparent !important;
+      border: 1px solid transparent !important;
+
+      label {
+        color: #ffffff !important;
+      }
+    }
+  }
+
+  .adduserinformation {
+    display: flex;
+    flex-direction: column;
+    padding: 15;
+    gap: 14px;
+
+    &--user {
+      img {
+        border-radius: 16px;
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+      }
+    }
+
+    &--name {
+      @include boldfont;
+    }
+
+    &--details {
+      display: flex;
+
+      &__block {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        @include meduimfont;
+        background: $baige;
+        width: 100%;
+        padding: 16px;
+        border-left: 1px solid #ebe7de;
+
+        span {
+          color: $Brown;
+        }
+
+        &:last-child {
+          border: none;
+        }
+      }
+    }
+
+    &--advancedInfo {
+      display: flex;
+      width: 100%;
+      gap: 10px;
+    }
+
+    &--rolespackage {
+      display: flex;
+      gap: 12px;
+      padding: 15px;
+      background: var(--Disable, #f8f9fa);
+      flex-direction: column;
+
+      h4 {
+        @include boldfont-16;
+        background: transparent;
+        padding: 0;
+        color: #000;
+        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+        gap: 3px;
+      }
+
+      &--listofrole {
+        height: 200px;
+        overflow-y: scroll;
+
+        &--form-check {
+          border-bottom: 1px dashed #cdcdcd;
+          background: var(--white-100, #fff);
+          width: 100%;
+          padding: 10px;
+          margin-right: 0px;
+          display: flex;
+
+          .form-check-input {
+            width: 20px;
+            height: 20px;
+            margin-right: 0;
+            cursor: pointer;
+          }
+
+          &--role {
+            &__rolename {
+              label {
+                @include boldfont;
+              }
+            }
+
+            &__description {
+              color: #99a1b7;
+              @include meduimfont-reg-12;
+
+              a {
+                color: #a38664;
+                text-decoration: underline;
+                @include meduimfont;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.FilterList {
+  width: 368px;
+}

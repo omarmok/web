@@ -1,0 +1,102 @@
+$blueGrediant: linear-gradient(180deg, #002d73 0%, #003ca6 100%);
+$bodyBg: hsl(0, 0%, 96%);
+$green-100: #0d8f75;
+$green-50: #e3f9f4;
+$darkBlue: #00367e;
+$Brown: #704214;
+$table-th: #f3f0eb;
+$baige: #f8f6f2;
+$brown-light: #CA9E68;
+$moi-info: #0d99ff;
+$blueColor: #0652C2;
+
+// shadows
+$shadow-100: 0px 8px 30px rgba(181, 181, 181, 0.08);
+$shadow-2: 0px 5px 35px 0px rgba(0, 27, 175, 0.05);
+
+$borderRadius: 6px;
+$transition-speed: 0.4s; 
+
+:root {
+  --tran-03: all 0.2s ease;
+  --tran-03: all 0.3s ease;
+  --tran-04: all 0.3s ease;
+  --tran-05: all 0.3s ease;
+  --alpha: 0.8;
+  --color_change: #00367e;
+  /* Effects */
+  --shadow-1-box-shadow: 0px 8px 30px 0px rgba(181, 181, 181, 0.08);
+  --shadow-2-box-shadow: 0px 8px 20px 0px rgba(226, 232, 240, 1);
+  --neumo-box-shadow: -10px -10px 30px 0px rgba(255, 255, 255, 1),
+    10px 10px 30px 0px rgba(174, 174, 192, 0.4);
+  --inner-shadow-box-shadow: inset -20px -28.42px 30.17px 0px
+      rgba(255, 255, 255, 0.38),
+    inset -20px -31.36px 35.03px 0px rgba(255, 255, 255, 0.45),
+    inset -20px -36.83px 42.67px 0px rgba(255, 255, 255, 0.54),
+    inset -20px -63px 65px 0px rgba(255, 255, 255, 0.75),
+    inset 30px 54px 61px 0px rgba(209, 217, 230, 0.67),
+    inset 30px 35px 45px 0px rgba(209, 217, 230, 0.48),
+    inset 30px 28px 38px 0px rgba(209, 217, 230, 0.4),
+    inset 30px 24px 34px 0px rgba(209, 217, 230, 0.34);
+}
+
+.shadow-22 {
+  box-shadow: $shadow-2;
+}
+/* Classes for background colors */
+
+.green-100 {
+  background-color: $green-100 !important;
+}
+
+.darkBlue {
+  background-color: $darkBlue !important;
+}
+
+.Brown {
+  background-color: $Brown !important;
+}
+
+.baige {
+  background-color: $baige !important;
+}
+
+.brown-light {
+  background-color: $brown-light !important;
+}
+
+.blueColor-bg{
+  background-color: $blueColor !important;
+}
+
+/* Classes for text colors */
+
+.blueColor {
+  color: $blueColor !important;
+}
+
+.green-100Color {
+  color: $green-100 !important;
+}
+
+.darkBlueColor {
+  color: $darkBlue !important;
+}
+
+.BrownColor {
+  color: $Brown !important;
+}
+
+.baigeColor {
+  color: $baige !important;
+}
+
+
+.brownlightColor {
+
+  color: $brown-light  !important;
+}
+
+.text-gold {
+  color: $Brown;
+}

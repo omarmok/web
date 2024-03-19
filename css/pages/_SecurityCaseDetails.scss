@@ -1,0 +1,55 @@
+.SecurityCaseDetails {
+  &--right {
+    background: white;
+    padding: 15px;
+    border: 1px solid #a38664;
+    border-radius: 8px;
+
+    &__title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px;
+
+      h3 {
+        @include boldfont;
+        color: #a38664;
+      }
+    }
+
+    &--body {
+      padding-top: 15px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: space-between;
+
+      .block {
+        display: flex;
+        padding: 10px;
+        width: 49%;
+        flex-direction: column;
+        border-radius: var(--border-width-border-4, 4px);
+        background: var(--Disable, #f8f9fa);
+        border: 1px solid #e5e8f0;
+
+        label {
+          color: #a38664;
+        }
+
+        span {
+          color: #000;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  &--left {
+    @extend .SecurityCaseDetails--right;
+
+    &__title {
+      @extend .SecurityCaseDetails--right__title;
+    }
+  }
+}

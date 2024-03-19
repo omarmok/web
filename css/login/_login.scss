@@ -1,0 +1,245 @@
+.loginBody {
+  background: url("./../images/login-bg.svg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  // overflow: hidden;
+
+  &__right__area {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 8px 20px 0px #e2e8f0;
+    border-radius: 20px;
+    border-top: 5px solid $green-100;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 110px;
+    padding: 20px;
+    background: #fff;
+    background: url(../images/logimage.svg) #fff no-repeat -270px -20%;
+
+    &__title {
+      img {
+        margin-left: 10px;
+        height: 60px;
+      }
+
+      &--subtitle {
+        h3 {
+          @include titles;
+          color: $darkBlue;
+        }
+
+        span {
+          @include boldfont;
+        }
+      }
+    }
+
+    &--logintitle {
+      margin-top: 20px;
+      color: #000;
+      @include boldfont-18;
+    }
+
+    .form-check {
+      margin-bottom: 0;
+    }
+
+    .form-content img {
+      position: absolute;
+      top: 12px;
+      right: 10px;
+      height: 20px;
+    }
+
+    .input-group {
+      .input-group-text {
+        background: #fff;
+        border-left: 0;
+        padding-left: 0;
+      }
+
+      input {
+        border-right: none;
+      }
+    }
+
+    .form-control {
+      // box-shadow: 0px 3px 8px rgb(214 221 249 / 43%);
+      border-radius: 4px;
+      padding-right: 18px;
+    }
+
+    .passworddiv {
+      position: relative;
+
+      .fa {
+        display: contents;
+      }
+
+      .fa-eye::before {
+        content: "";
+      }
+
+      .fa-eye-slash::before {
+        content: "";
+      }
+
+      .fa-eye:before {
+        content: "";
+        position: absolute;
+        top: 12px;
+        left: 15px;
+        width: 16px;
+        height: 16px;
+        background-image: url(./../images/icon-eye-row.svg);
+        background-size: 16px 20px;
+      }
+
+      .fa-eye-slash:after {
+        content: "";
+        position: absolute;
+        top: 12px;
+        left: 15px;
+        width: 16px;
+        height: 16px;
+        background-image: url(./../images/icon-eye-slash-login.svg);
+        background-size: 16px 20px;
+      }
+    }
+
+    .forget-passowrd {
+      margin: 0 auto;
+      display: flex;
+      justify-content: flex-start;
+      @include meduimfont;
+    }
+
+    .interviewerFingerPrintdes {
+      height: 120px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      border: 1px dashed #cdcbcb;
+      font-size: 14px;
+
+      img {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+
+  .ordiv {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+
+    .line {
+      background: #f4f0e8;
+      height: 1px;
+      width: 100%;
+    }
+  }
+
+  &__left__area {
+    display: flex;
+    // height: 40vh;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+
+    .copyRights {
+      font-size: 10px;
+      margin-top: 20px;
+      color: #fff;
+    }
+
+    .loginbuttons {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      display: flex;
+
+      a {
+        border-radius: 50%;
+        border: 1px solid #fff;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5px;
+
+        &:hover {
+          background: $green-100;
+          border: none;
+        }
+      }
+    }
+
+    .circle-exterior {
+      margin-bottom: 30px;
+      position: relative;
+      animation-name: float;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-timing-function: ease;
+    }
+
+    h3 {
+      @include boldfont-18;
+      color: #fff;
+    }
+  }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+@keyframes float {
+  to {
+    top: 0;
+  }
+
+  from {
+    top: 30px;
+  }
+}
+
+.Fingerimage {
+  width: 100px !important;
+  height: 100px !important;
+  margin-top: 10px !important;
+}
+
+.reloadbtn {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.reloadbtn img {
+  height: 25px !important;
+  width: 25px !important;
+}
+
+.loginBody__right__area .ordiv .titlebettween {
+  padding: 10px;
+  border-radius: 4px;
+  @include meduimfont;
+  color: #a38664;
+  z-index: 1;
+  min-width: max-content;
+}

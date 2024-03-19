@@ -1,0 +1,40 @@
+.createAgency {
+  margin: 15px;
+
+  .nav-link {
+    font-weight: 600;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    text-decoration: none !important;
+    background: white;
+    position: relative;
+    font-weight: 600;
+    height: 50px;
+    border: 1px solid var(--color_change);
+    color: var(--color_change);
+    margin-bottom: 10px;
+  }
+
+  .nav-link.active {
+    background-color: #a38664 !important;
+    border: 1px solid #a38664 !important;
+  }
+
+  .tab-content {
+    box-shadow: rgba(181, 181, 181, 0.08) 0px 8px 30px;
+    background: rgb(255, 255, 255);
+    padding: 15px;
+
+    .right-area {
+      flex-wrap: wrap;
+      gap: 10px;
+
+      .form-group {
+        width: 32%;
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+﻿.modal {
+  z-index: 999999999999999999999999999;
+
+  .modal-content {
+    padding: 15px;
+    border: none;
+
+    .modal-header {
+      padding: 20px;
+
+      h5 {
+        color: #fff;
+      }
+    }
+
+    .modal-info-header {
+      border-radius: 0;
+      background: #eaf2ff;
+
+      h5 {
+        color: #007bff;
+      }
+
+      .btn-close {
+        background: url("../../images/icon-x-circle-info-modal-w.svg") no-repeat;
+      }
+    }
+
+    .modal-danger-header {
+      background: #f43f5e;
+      padding: 10px;
+
+      h5 {
+        color: #fff;
+      }
+
+      .btn-close {
+        background: url("../../images/icon-x-circle.svg") no-repeat;
+      }
+    }
+    .btn-close {
+      margin: 0;
+    }
+
+    .modal-body {
+      .wanted-to {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        @include smallfont-reg-10;
+
+        span {
+          @include meduimfont;
+          color: #000;
+        }
+      }
+
+      .tablecontainer .table thead tr th {
+        border-bottom: 0;
+        text-align: center;
+        white-space: nowrap;
+        padding: 15px;
+        border-radius: 0;
+        font-size: 12px;
+        background: #f8f6f2;
+        opacity: 1;
+        color: #552e00;
+      }
+    }
+
+    .modal-footer {
+      padding: 10px 0 0 0;
+    }
+  }
+}

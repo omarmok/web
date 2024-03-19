@@ -1,0 +1,70 @@
+﻿.tabsDesign {
+  nav {
+    background: #f8f6f2;
+    padding: 15px;
+  }
+
+  .nav-tabs {
+    .nav-link {
+      font-weight: 600;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      text-decoration: none !important;
+      border: 1px dashed #000;
+      color: #000;
+      background: white;
+      position: relative;
+      font-weight: 600;
+      height: 50px;
+      margin-left: 10px;
+
+      &.active {
+        color: #ffffff !important;
+        cursor: default;
+        background: #ad7737;
+        color: #fff;
+        border: none;
+      }
+    }
+  }
+
+  .wizerdImage {
+    background: #fff;
+    padding: 4px 8px;
+    border-radius: 80%;
+    border: 1px dashed #ad7737;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+    box-shadow: none;
+    transition: transition-duration, 0.8s ease !important;
+    color: #000000;
+  }
+
+  .tab-content {
+    margin-top: 10px;
+  }
+
+  .tab-content > .active {
+    display: block;
+    padding: 15px;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 0px 8px 30px rgba(181, 181, 181, 0.08);
+    flex-direction: column;
+    background: #fff;
+  }
+}
+
+// .tab-content {
+//     .tablecontainer .table thead tr th{
+//         border: 1px solid #e2e8fa;
+//         background: #f1f5fe;
+//         color: #060606;
+//     }
+// }

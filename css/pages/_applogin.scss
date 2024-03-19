@@ -1,0 +1,14 @@
+
+.app-login{
+    background: url(/images/mobile-app-bg.svg) right top no-repeat  ;
+    // max-width: 500px;
+    min-height: 95vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    img{
+        height: 150px;
+    }
+  
+}

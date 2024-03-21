@@ -6843,6 +6843,20 @@ input:checked + .slider::after {
 .personCardapp .newIms--inquiryDs--card, .personCardapp .incomingIncidents--container--card, .personCardapp .incomingIncidents--container--rightarea {
   margin-top: 0;
 }
+.personCardapp .subactions {
+  position: absolute;
+  left: 5px;
+  top: 15px;
+  display: flex;
+}
+.personCardapp .subactions .btn {
+  padding: 0;
+  height: 0;
+}
+.personCardapp .subactions .btn svg {
+  height: 16px;
+  width: 16px;
+}
 
 .content__user__area, .mail__area .card, .content__left__area .homepage__category .card {
   background: #fff;

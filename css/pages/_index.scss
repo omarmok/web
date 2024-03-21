@@ -41,12 +41,30 @@ background: #F8F4F1;
 box-shadow: 10px 5px 29px rgba(163, 134, 100, 0.16);
 padding: 25px;
 border-radius: 0 0 10px 40px;
-
+display: flex;
 align-items: center;
 justify-content: space-between;
 box-shadow: 0px 8px 30px #DEDBD5;
 border-radius: 16px 16px 0px 0px;
-
+a{
+    color: #514f4f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 600;
+    svg{
+        fill: #514f4f;
+        height: 24px;
+        width: 24px;
+    }
+    &:hover{
+        color:$green-100;
+        svg{
+            fill:$green-100;
+        }
+    }
+}
 
 }
 
@@ -65,7 +83,7 @@ padding-bottom:15px ;
         padding: 10px 16px;
         gap: 5px;
         
-        height: 44px;
+        height: 50px;
         
         background: #FFFFFF;
         
@@ -73,12 +91,12 @@ padding-bottom:15px ;
         border-radius: 8px;
         color:#000;
         font-weight: 600;
-        font-size: 14px;
+        font-size: 16px;
         min-width: 180px;
         svg{
             fill:#000;
-            width: 24px;
-            height: 24px;
+            width: 30px;
+            height: 30px;
         }
         
             }
@@ -86,6 +104,7 @@ padding-bottom:15px ;
             .nav-link.active{
                 background: $green-100;
                 color: #fff;
+                box-shadow: 4px 5px 8px rgb(13 143 117 / 52%);
                 svg{
                     fill:#fff;
                 }

@@ -1924,7 +1924,7 @@ input:checked + .slider:before {
   display: flex;
   align-items: center;
   gap: 10px;
-  background: #ffffff;
+  background: #f8f3e8;
   padding: 10px;
   border-radius: 4px;
   svg{
@@ -1948,5 +1948,87 @@ input:checked + .slider:before {
     padding: 2px 6px;
     display: flex;
     justify-content: center;
+  }
+}
+
+.fegrid{
+  height: 600px;
+  overflow-y: scroll;
+  margin: 10px;
+  .card{
+    background: #fff;
+    box-shadow: 0px 8px 30px rgba(181, 181, 181, 0.08);
+    border: 1px solid white;
+    padding: 20px;
+margin: 10px;
+
+    .title{
+      display: flex;
+      justify-content: space-between;
+      .number{
+        font-size: 14px;
+        font-weight: 600;
+
+        .text-bg-warning{
+          background-color: #FCF2E8 !important;
+          border-radius: 5px !important;
+          color: #E78B2F !important;
+        }
+
+        .text-bg-Success{
+         
+          background-color: #EAFAF6 !important;
+            border-radius: 5px  !important;
+            color:#00B792  !important;
+
+          }
+      }
+      svg{
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    .body{
+      margin-top: 10px;
+      background: #FBFBFC;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      padding: 16px;
+      .block{
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        background: #fff;
+        border: 1px solid #f0e7e7;
+        width: 100%;
+        padding: 10px;
+        border-radius: 6px;
+        label{
+          font-size: 14px;
+          font-weight: 600;
+          color:$brown-light;
+        }
+        span{
+          font-size: 14px;
+          font-weight: 600;
+        }
+      }
+
+    }
+  }
+}
+
+.actionbuttns{
+  display: flex;
+  gap:10px;
+  margin: 18px 0;
+  svg{
+    height: 24px;
+    width: 24px;
+  }
+  .btn{
+    width: 100%;
   }
 }

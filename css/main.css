@@ -2489,7 +2489,7 @@ input:checked + .slider:before {
   display: flex;
   align-items: center;
   gap: 10px;
-  background: #ffffff;
+  background: #f8f3e8;
   padding: 10px;
   border-radius: 4px;
 }
@@ -2512,6 +2512,81 @@ input:checked + .slider:before {
   padding: 2px 6px;
   display: flex;
   justify-content: center;
+}
+
+.fegrid {
+  height: 600px;
+  overflow-y: scroll;
+  margin: 10px;
+}
+.fegrid .card {
+  background: #fff;
+  box-shadow: 0px 8px 30px rgba(181, 181, 181, 0.08);
+  border: 1px solid white;
+  padding: 20px;
+  margin: 10px;
+}
+.fegrid .card .title {
+  display: flex;
+  justify-content: space-between;
+}
+.fegrid .card .title .number {
+  font-size: 14px;
+  font-weight: 600;
+}
+.fegrid .card .title .number .text-bg-warning {
+  background-color: #FCF2E8 !important;
+  border-radius: 5px !important;
+  color: #E78B2F !important;
+}
+.fegrid .card .title .number .text-bg-Success {
+  background-color: #EAFAF6 !important;
+  border-radius: 5px !important;
+  color: #00B792 !important;
+}
+.fegrid .card .title svg {
+  width: 30px;
+  height: 30px;
+}
+.fegrid .card .body {
+  margin-top: 10px;
+  background: #FBFBFC;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 16px;
+}
+.fegrid .card .body .block {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  background: #fff;
+  border: 1px solid #f0e7e7;
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+}
+.fegrid .card .body .block label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #CA9E68;
+}
+.fegrid .card .body .block span {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.actionbuttns {
+  display: flex;
+  gap: 10px;
+  margin: 18px 0;
+}
+.actionbuttns svg {
+  height: 24px;
+  width: 24px;
+}
+.actionbuttns .btn {
+  width: 100%;
 }
 
 .sidebar {
@@ -11894,10 +11969,30 @@ body {
   box-shadow: 10px 5px 29px rgba(163, 134, 100, 0.16);
   padding: 25px;
   border-radius: 0 0 10px 40px;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   box-shadow: 0px 8px 30px #DEDBD5;
   border-radius: 16px 16px 0px 0px;
+}
+.BottomNavigationBar a {
+  color: #514f4f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 600;
+}
+.BottomNavigationBar a svg {
+  fill: #514f4f;
+  height: 24px;
+  width: 24px;
+}
+.BottomNavigationBar a:hover {
+  color: #0d8f75;
+}
+.BottomNavigationBar a:hover svg {
+  fill: #0d8f75;
 }
 
 .homenav .nav {
@@ -11911,23 +12006,24 @@ body {
   align-items: center;
   padding: 10px 16px;
   gap: 5px;
-  height: 44px;
+  height: 50px;
   background: #FFFFFF;
   box-shadow: 0px 8px 30px rgba(181, 181, 181, 0.08);
   border-radius: 8px;
   color: #000;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 16px;
   min-width: 180px;
 }
 .homenav .nav .nav-link svg {
   fill: #000;
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
 }
 .homenav .nav .nav-link.active {
   background: #0d8f75;
   color: #fff;
+  box-shadow: 4px 5px 8px rgba(13, 143, 117, 0.52);
 }
 .homenav .nav .nav-link.active svg {
   fill: #fff;
@@ -11939,5 +12035,8 @@ body {
 @media only screen and (max-width: 600px) {
   .homenav .nav {
     overflow-x: scroll;
+  }
+  .fegrid .card .body {
+    flex-direction: column;
   }
 }/*# sourceMappingURL=main.css.map */

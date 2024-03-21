@@ -1,0 +1,66 @@
+
+.personCardapp{
+
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 14px;
+gap: 8px;
+
+
+background: #FFFFFF;
+/* app-box-shadow */
+box-shadow: 0px 2px 10px rgba(51, 40, 40, 0.03);
+border-radius: 8px;
+&--cardnav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    &__title{
+        font-weight: 600;
+        font-size: 16px;
+        color:$brown-light
+    }
+    &__actions{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+        svg{
+            height: 24px;
+            width: 24px;
+        }
+    }
+
+
+}
+
+&--personmaindetails{
+width: 100%;
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 12px;
+gap: 10px;
+background: rgba(248, 246, 242, 0.5);
+
+border: 1px solid #F3F0EB;
+border-radius: 8px;
+
+
+}
+
+.newIms--inquiryDs--card label{
+    font-size: 14px;
+}
+.fullname{
+    font-size: 16px;
+    color: $brown-light;
+}
+
+.newIms--inquiryDs--card{
+    margin-top: 0;;
+}
+}

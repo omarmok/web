@@ -6791,6 +6791,59 @@ input:checked + .slider::after {
   border: 11px solid white;
 }
 
+.personCardapp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 14px;
+  gap: 8px;
+  background: #FFFFFF;
+  /* app-box-shadow */
+  box-shadow: 0px 2px 10px rgba(51, 40, 40, 0.03);
+  border-radius: 8px;
+}
+.personCardapp--cardnav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.personCardapp--cardnav__title {
+  font-weight: 600;
+  font-size: 16px;
+  color: #CA9E68;
+}
+.personCardapp--cardnav__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.personCardapp--cardnav__actions svg {
+  height: 24px;
+  width: 24px;
+}
+.personCardapp--personmaindetails {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  background: rgba(248, 246, 242, 0.5);
+  border: 1px solid #F3F0EB;
+  border-radius: 8px;
+}
+.personCardapp .newIms--inquiryDs--card label, .personCardapp .incomingIncidents--container--card label, .personCardapp .incomingIncidents--container--rightarea label {
+  font-size: 14px;
+}
+.personCardapp .fullname {
+  font-size: 16px;
+  color: #CA9E68;
+}
+.personCardapp .newIms--inquiryDs--card, .personCardapp .incomingIncidents--container--card, .personCardapp .incomingIncidents--container--rightarea {
+  margin-top: 0;
+}
+
 .content__user__area, .mail__area .card, .content__left__area .homepage__category .card {
   background: #fff;
   padding: 15px;

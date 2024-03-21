@@ -9,13 +9,12 @@ body {
   direction: rtl;
   font-size: 14px;
   text-align: right;
-
   background: url(../images/mobile-app-bg.svg), #FAF9F7;
   background-repeat: no-repeat;
   background-position:right top  ;
   font-family: "IBMPlexSansArabic";
   min-height: 100vh;
-  max-width: 880px;
+  max-width: 1050px;
   margin: 0 auto;
   transition: var(--tran-05);
 

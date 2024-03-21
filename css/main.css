@@ -775,7 +775,7 @@ body {
   background-position: right top;
   font-family: "IBMPlexSansArabic";
   min-height: 100vh;
-  max-width: 880px;
+  max-width: 1050px;
   margin: 0 auto;
   transition: var(--tran-05);
 }
@@ -11873,7 +11873,6 @@ body {
 
 .homenav .nav {
   flex-wrap: nowrap;
-  overflow-x: scroll;
   padding-bottom: 15px;
 }
 .homenav .nav .nav-link {
@@ -11906,4 +11905,10 @@ body {
 }
 .homenav ::-webkit-scrollbar-thumb {
   background: #8f9b98;
+}
+
+@media only screen and (max-width: 600px) {
+  .homenav .nav {
+    overflow-x: scroll;
+  }
 }/*# sourceMappingURL=main.css.map */

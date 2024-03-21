@@ -2489,7 +2489,7 @@ input:checked + .slider:before {
   display: flex;
   align-items: center;
   gap: 10px;
-  background: #f8f3e8;
+  background: #f2f0eb;
   padding: 10px;
   border-radius: 4px;
 }
@@ -2517,7 +2517,7 @@ input:checked + .slider:before {
 .fegrid {
   height: 600px;
   overflow-y: scroll;
-  margin: 10px;
+  margin: 10px 0;
 }
 .fegrid .card {
   background: #fff;

@@ -775,7 +775,7 @@ body {
   background-position: right top;
   font-family: "IBMPlexSansArabic";
   min-height: 100vh;
-  max-width: 700px;
+  max-width: 880px;
   margin: 0 auto;
   transition: var(--tran-05);
 }
@@ -11906,14 +11906,4 @@ body {
 }
 .homenav ::-webkit-scrollbar-thumb {
   background: #8f9b98;
-}
-
-@media only screen and (max-width: 600px) {
-  .BottomNavigationBar {
-    background-color: red;
-    width: 374px;
-    position: absolute;
-    bottom: 0%;
-    right: 0;
-  }
 }/*# sourceMappingURL=main.css.map */

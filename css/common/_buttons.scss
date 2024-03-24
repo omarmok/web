@@ -216,6 +216,44 @@
   }
 
 
+
+  &--brown-light--outline {
+    color: $brown-light;
+    background: transparent;
+    border: 1px solid $brown-light;
+
+
+
+    svg {
+      fill: $brown-light;
+      margin-left: 5px;
+    }
+
+    &:hover {
+      background: rgba(112, 66, 20, 0.514);
+      color: #fff;
+      border: 1px solid #f8f6f2;
+
+   
+    }
+
+    &:active {
+      background: #a38664 !important;
+      opacity: 0.8 !important;
+      color: #fff !important;
+      border: 1px solid #a38664 !important;
+    }
+
+    &:focus {
+      background: #a38664 !important;
+      opacity: 0.8 !important;
+      color: #fff !important;
+      border: 1px solid #a38664 !important;
+    }
+  }
+
+
+
   &--blueColor{
 
     color: #fff;

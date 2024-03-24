@@ -1,7 +1,10 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
     .homenav .nav {
      
         overflow-x: scroll;
+    }
+    .fegrid{
+        height: 350px;
     }
     .fegrid .card .body{
         flex-direction: column;

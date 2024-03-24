@@ -394,6 +394,32 @@
   color: #fff !important;
   border: 1px solid #a38664 !important;
 }
+.moi-btn--brown-light--outline {
+  color: #CA9E68;
+  background: transparent;
+  border: 1px solid #CA9E68;
+}
+.moi-btn--brown-light--outline svg {
+  fill: #CA9E68;
+  margin-left: 5px;
+}
+.moi-btn--brown-light--outline:hover {
+  background: rgba(112, 66, 20, 0.514);
+  color: #fff;
+  border: 1px solid #f8f6f2;
+}
+.moi-btn--brown-light--outline:active {
+  background: #a38664 !important;
+  opacity: 0.8 !important;
+  color: #fff !important;
+  border: 1px solid #a38664 !important;
+}
+.moi-btn--brown-light--outline:focus {
+  background: #a38664 !important;
+  opacity: 0.8 !important;
+  color: #fff !important;
+  border: 1px solid #a38664 !important;
+}
 .moi-btn--blueColor {
   color: #fff;
   background: #0652C2;
@@ -919,7 +945,7 @@ label {
 }
 
 .form-group-info {
-  font-size: 10px;
+  font-size: 12px;
   display: flex;
   align-items: center;
 }
@@ -10693,6 +10719,7 @@ input:checked + .slider::after {
   font-size: 12px;
   font-weight: bold;
   color: #a38664;
+  font-size: 14px;
 }
 .newIms--inquiryDs--card--top {
   border-radius: 8px;
@@ -12032,7 +12059,7 @@ body {
 .BottomNavigationBar {
   padding: 14px 16px;
   gap: 35px;
-  background: #F8F4F1;
+  background: #fff;
   box-shadow: 10px 5px 29px rgba(163, 134, 100, 0.16);
   padding: 25px;
   border-radius: 0 0 10px 40px;
@@ -12099,9 +12126,12 @@ body {
   background: #8f9b98;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
   .homenav .nav {
     overflow-x: scroll;
+  }
+  .fegrid {
+    height: 350px;
   }
   .fegrid .card .body {
     flex-direction: column;
